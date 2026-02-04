@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Sansation;
+    src: url("Sansation-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Sansation, sans-serif;
+    background-color: #000;
+    height: 1000vh;
+}
+
+/* NAVBAR */
+#navbar {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 56px;
+    padding: 0 20px;
+
+    background: rgba(60, 60, 60, 0.25);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#navbar h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: rgb(120, 200, 215);
+}
+
+#navbar button {
+    background: linear-gradient(
+        135deg,
+        rgb(190, 60, 200),
+        rgb(120, 40, 160)
+    );
+
+    border: none;
+    padding: 8px 16px;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    font-family: Sansation;
+    cursor: pointer;
+    transition: 
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+#navbar button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(160, 60, 200, 0.4);
+    filter: brightness(1.1);
+}
